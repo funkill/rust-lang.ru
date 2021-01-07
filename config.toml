@@ -1,0 +1,21 @@
+# The URL the site will be built for
+base_url = "https://rust-lang.ru"
+
+title = "Rust - русскоязычное сообщество"
+description = "Язык программирования, дающий возможность каждому создавать надёжное и эффективное программное обеспечение."
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = false
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+[extra]
+# Put all your custom variables here
+gtag = "UA-142155799-6"
+yandex-verification = "76c5ab59a7189895" 
+yametric = "55563433"

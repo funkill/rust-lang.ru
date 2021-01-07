@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="{% if lang %}{{ lang }}{% else %}ru{% endif %}">
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+        <meta name="description" content="{{ config.description }}">
+
+        <link rel="stylesheet" href="{{ get_url(path="main.min.css", trailing_slash=false) }}">
+        {% if config.extra.yandex_verification %}
+        <meta name="yandex-verification" content="{{ config.extra.yandex_verification }}" />
+        {% endif %}
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ get_url(path="/img/apple-touch-icon.png") }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ get_url(path="/img/favicon-32x32.png") }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ get_url(path="/img/favicon-16x16.png") }}">
+        <link rel="shortcut icon" href="{{ get_url(path="/img/favicon.ico") }}">
+        <link rel="canonical" href="{{ get_url(path="/") }}"/>
+
+        {% include "social/_twitter_card.html" %}
+        {% include "social/_fb_opengraph.html" %}
+
+        {% block extra_head %}
+        {% endblock extra_head %}
+    </head>
+    <body>
+        <div class="container">
+            <!-- { { __tera_context } } -->
+            <div class="text-center">
+                <div class="">
+                    <img src="/img/rust-logo-blk.svg" />
+                    <h4 class="mt-9 align-middle">Rust - русскоязычное сообщество</h4>
+                </div>
+                <p>Здесь скоро будет сайт, а пока что вы можете</p>
+
+                <div class="row">
+                {% set data = load_data(path="data/content.json") %}
+                {% for items in data %}
+                    <div class="col-3 text-left">
+                    {{ items.title }}
+                    <ul>
+                        {% for item in items.items %}
+                        <li>
+                            {% if item.icon %}
+                                {% if item.icon_link %}
+                                    <a href="{{ item.icon_link }}">
+                                {% endif %}
+                                    <i class="fab {{ item.icon }}"></i>
+                                {% if item.icon_link %}
+                                    </a>
+                                {% endif %}
+                            {% endif %}
+                            <a href="{{ item.link }}">
+                                {{ item.title }}
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+        </div>
+        {% include "metrics/_google.html" %}
+        {% include "metrics/_ya.html" %}
+    </body>
+</html>
