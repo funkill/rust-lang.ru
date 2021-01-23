@@ -1,0 +1,96 @@
+[
+    {
+        "title": "пообщаться:",
+        "items": [
+            { "title": "Rust - Begginners", "link": "https://t.me/rust_beginners_ru", "icon": "fa-telegram tg-icon" },
+            { "title": "Rust - русскоговорящее сообщество", "link": "https://t.me/rustlang_ru", "icon": "fa-telegram tg-icon" },
+            { "title": "Rust Async", "link": "https://t.me/rust_async", "icon": "fa-telegram tg-icon" },
+            { "title": "Флудилка, Rust Jerk", "link": "https://t.me/rustjerk", "icon": "fa-telegram tg-icon" },
+            { "title": "Оффтопик", "link": "https://t.me/rust_offtopic", "icon": "fa-telegram tg-icon" },
+            { "title": "Вакансии и резюме", "link": "https://t.me/rust_jobs", "icon": "fa-telegram tg-icon" },
+            { "title": "Новости (канал)", "link": "https://t.me/this_week_in_rust", "icon": "fa-telegram tg-icon" },
+            { "title": "Геймдев", "link": "https://t.me/rust_gamedev_ru", "icon": "fa-telegram tg-icon" },
+            { "title": "System programming beginners", "link": "https://t.me/sys_beginners_ru", "icon": "fa-telegram tg-icon" },
+            { "title": "embedded.rs", "link": "https://t.me/embedded_rs", "icon": "fa-telegram tg-icon" },
+            { "title": "Rust - English speaking community", "link": "https://t.me/Rustlang_EN", "icon": "fa-telegram tg-icon" },
+            { "title": "Переводы", "link": "https://t.me/rustlang_ru_translations", "icon": "fa-telegram tg-icon" },
+            { "title": "ruRust Saint Petersburg meetups", "link": "https://t.me/ruRust_spb", "icon": "fa-telegram tg-icon" },
+            { "title": "Московский Rust-митап", "link": "https://t.me/ruRust_msk", "icon": "fa-telegram tg-icon" },
+            { "title": "Peer Lab Kharkiv #Rust", "link": "https://t.me/peerlab_kharkiv_rust", "icon": "fa-telegram tg-icon" },
+            { "title": "Peer Lab Lviv #Rust", "link": "https://t.me/peerlab_lviv_rust", "icon": "fa-telegram tg-icon" },
+            { "title": "Форум", "link": "https://forum.rustycrate.ru/", "icon": "fa-discourse" }
+        ]
+    },
+    {
+        "title": "изучить Rust:",
+        "items": [
+            {
+                "title": "Язык программирования Rust", 
+                "link": "https://doc.rust-lang.ru/book", 
+                "icon": "fa-github",
+                "icon_link": "https://github.com/rust-lang-ru/book"
+            },
+            {
+                "title": "Rust на примерах", 
+                "link": "https://doc.rust-lang.ru/stable/rust-by-example/",
+                "icon": "fa-github",
+                "icon_link": "https://github.com/rust-lang-ru/rust-by-example"
+            },
+            {
+                "title": "Асинхронное программирование на Rust", 
+                "link": "https://doc.rust-lang.ru/async-book",
+                "icon": "fa-github",
+                "icon_link": "https://github.com/rust-lang-ru/async-book"
+            },
+            {
+                "title": "Лекции А. Кладова", 
+                "link": "https://www.youtube.com/watch?v=Oy_VYovfWyo&list=PLlb7e2G7aSpTfhiECYNI2EZ1uAluUqE_e",
+                "icon": "fa-youtube youtube-icon"
+            },
+            {
+                "title": "Видео с митапов русскоязычного сообщества", 
+                "link": "https://www.youtube.com/channel/UCdZV0XJvls773ljUEYTsNzA",
+                "icon": "fa-youtube youtube-icon"
+            }
+        ]
+    },
+    {
+        "title": "подписаться на соцсети:",
+        "items": [
+            {
+                "title": "Хаб Rust на Habr",
+                "link": "https://habr.com/ru/hub/rust"
+            },
+            {
+                "title": "RustLangRu на Habr",
+                "link": "https://habr.com/ru/users/RustLangRu/"
+            },
+            {
+                "title": "VK",
+                "link": "https://vk.com/rustycrate"
+            },
+            {
+                "title": "Twitter",
+                "link": "https://twitter.com/RustLangRu"
+            },
+            {
+                "title": "Facebook",
+                "link": "https://www.facebook.com/rustycrate/"
+            }
+        ]
+    },
+    {
+        "title": "помочь сообществу:",
+        "items": [
+            {
+                "title": "включиться в работу",
+                "link": "https://github.com/rust-lang-ru/community",
+                "icon": "fa-github"
+            },
+            {
+                "title": "поддержать на OpenCollective",
+                "link": "https://opencollective.com/rust-lang-ru"
+            }
+        ]
+    }
+]
