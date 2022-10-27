@@ -37,6 +37,12 @@
                 "icon_link": "https://github.com/rust-lang-ru/rust-by-example"
             },
             {
+                "title": "Rustonomicon", 
+                "link": "https://doc.rust-lang.ru/stable/nomicon/",
+                "icon": "fa-github",
+                "icon_link": "https://github.com/rust-lang-ru/nomicon"
+            },
+            {
                 "title": "Асинхронное программирование на Rust", 
                 "link": "https://doc.rust-lang.ru/async-book",
                 "icon": "fa-github",
