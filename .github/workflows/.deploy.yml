@@ -1,0 +1,26 @@
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install node deps
+        uses: docker://node:15.12.0-alpine3.13
+        run: yarn install --frozen-lockfile
+      - name: Build
+        uses: docker://balthek/zola:0.13.0
+        run: zola build
+      - name: Deploy
+        if: github.ref == 'refs/heads/master'
+        run: appleboy/scp-action@master
+          with:
+            host: ${{ secrets.DEPLOY_SERVER_HOST }}
+            port: ${{ secrets.DEPLOY_SERVER_PORT }}
+            username: ${{ secrets.DEPLOY_SERVER_USERNAME }}
+            key: ${{ secrets.DEPLOY_SERVER_KEY }}
+            source: ${{ env.BUILD_SCRIPT_OUTPUT }}
+            target: ${{ env.DEPLOY_PATH }}/${{ env.BRANCH_NAME }}
